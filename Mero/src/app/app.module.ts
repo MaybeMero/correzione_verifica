@@ -4,11 +4,13 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { DrivingListComponent } from './driving-list/driving-list.component';
+import { RentedComponent } from './rented/rented.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DrivingListComponent
+    DrivingListComponent,
+    RentedComponent
   ],
   imports: [
     BrowserModule,

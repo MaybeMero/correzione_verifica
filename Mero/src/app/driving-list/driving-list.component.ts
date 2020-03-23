@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 export class DrivingListComponent implements OnInit {
   obs_drive: Observable<Drive[]>;
   drivelist: Drive[];
+  selectedCar : Drive;
   constructor( public http: HttpClient) { }
 
   ngOnInit(): void {
@@ -21,8 +22,10 @@ export class DrivingListComponent implements OnInit {
   {
       this.drivelist=auto;
   }
-  conNoleggia(macchina : Drive)
+  conNoleggia(macchina : Drive) :boolean
   {
     console.log(macchina);
+   this.selectedCar = macchina;
+    return false;
   }
 }
