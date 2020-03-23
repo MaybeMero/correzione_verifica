@@ -21,8 +21,8 @@ export class DrivingListComponent implements OnInit {
   {
       this.drivelist=auto;
   }
-  conNoleggia()
+  conNoleggia(macchina : Drive)
   {
-    console.log("ciao");
+    console.log(macchina);
   }
 }
